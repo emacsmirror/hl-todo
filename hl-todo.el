@@ -9,7 +9,7 @@
 ;; Package-Version: 3.9.3
 ;; Package-Requires: (
 ;;     (emacs  "26.1")
-;;     (compat "30.1"))
+;;     (compat "31.0"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -370,7 +370,7 @@ A negative argument means move backward that many keywords."
                       (if hl-todo-wrap-movement
                           nil
                         (user-error "No more matches")))))
-      (cl-decf arg))
+      (decf arg))
     (when (> arg 0)
       (let ((pos (save-excursion
                    (goto-char (point-min))
@@ -397,7 +397,7 @@ A negative argument means move forward that many keywords."
                                  nil
                                (user-error "No more matches"))))))
       (goto-char (match-end 0))
-      (cl-decf arg))
+      (decf arg))
     (when (> arg 0)
       (let ((pos (save-excursion
                    (goto-char (point-max))
