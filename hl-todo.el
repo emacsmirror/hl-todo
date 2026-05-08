@@ -120,6 +120,7 @@ located inside a string."
     ("KLUDGE" . "#d0bf8f")
     ("HACK"   . "#d0bf8f")
     ("TEMP"   . "#d0bf8f")
+    ("WIP"    . "#d0bf8f")
     ("FIXME"  . "#cc9393")
     ("XXXX*"  . "#cc9393"))
   "An alist mapping keywords to colors/faces used to display them.
