@@ -122,6 +122,7 @@ located inside a string."
     ("TEMP"   . "#d0bf8f")
     ("WIP"    . "#d0bf8f")
     ("FIXME"  . "#cc9393")
+    ("DEBUG"  . "#cc9393")
     ("XXXX*"  . "#cc9393"))
   "An alist mapping keywords to colors/faces used to display them.
 
