@@ -8,7 +8,7 @@
 
 ;; Package-Version: 3.9.3
 ;; Package-Requires: (
-;;     (emacs  "26.1")
+;;     (emacs  "28.1")
 ;;     (compat "31.0"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
