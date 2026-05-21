@@ -8,8 +8,9 @@
 
 ;; Package-Version: 3.9.3
 ;; Package-Requires: (
-;;     (emacs  "28.1")
-;;     (compat "31.0"))
+;;     (emacs    "28.1")
+;;     (compat   "31.0")
+;;     (cond-let  "1.1"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -50,6 +51,7 @@
 ;;; Code:
 
 (require 'compat)
+(require 'cond-let)
 (eval-when-compile (require 'subr-x))
 (eval-when-compile (require 'cl-lib))
 
@@ -556,5 +558,19 @@ Intended to be added to `magit-revision-wash-message-hook' and
 ;; Local Variables:
 ;; indent-tabs-mode: nil
 ;; lisp-indent-local-overrides: ((cond . 0) (interactive . 0))
+;; read-symbol-shorthands: (
+;;   ("and$"         . "cond-let--and$")
+;;   ("thread$"      . "cond-let--thread$")
+;;   ("when$"        . "cond-let--when$")
+;;   ("and-let*"     . "cond-let--and-let*")
+;;   ("and-let"      . "cond-let--and-let")
+;;   ("if-let*"      . "cond-let--if-let*")
+;;   ("if-let"       . "cond-let--if-let")
+;;   ("when-let*"    . "cond-let--when-let*")
+;;   ("when-let"     . "cond-let--when-let")
+;;   ("while-let*"   . "cond-let--while-let*")
+;;   ("while-let"    . "cond-let--while-let")
+;;   ("match-string" . "match-string")
+;;   ("match-str"    . "match-string-no-properties"))
 ;; End:
 ;;; hl-todo.el ends here
