@@ -52,7 +52,6 @@
 
 (require 'compat)
 (require 'cond-let)
-(eval-when-compile (require 'subr-x))
 (eval-when-compile (require 'cl-lib))
 
 (defvar grep-find-template)
